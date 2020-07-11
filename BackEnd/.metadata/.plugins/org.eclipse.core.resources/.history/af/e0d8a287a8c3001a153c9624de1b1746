@@ -1,0 +1,36 @@
+package com.quiz.model;
+
+import java.util.List;
+
+public class UserAnswers {
+	private String userName;
+	private List<Answer> answerList;
+	
+	public UserAnswers() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public UserAnswers(String userName, List<Answer> answerList) {
+		
+		this.userName = userName;
+		this.answerList = answerList;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public List<Answer> getAnswerList() {
+		return answerList;
+	}
+
+	public void setAnswerList(List<Answer> answerList) {
+		this.answerList = answerList;
+	}
+	
+
+}

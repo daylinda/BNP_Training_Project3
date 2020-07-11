@@ -1,0 +1,26 @@
+package com.quiz.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.quiz.model.AnswerResult;
+
+import com.quiz.model.UserAnswers;
+import com.quiz.service.AnswerService;
+
+@RestController
+public class AnswerController {
+	
+	@Autowired
+	private AnswerService service;
+	
+	@PostMapping("/answers")
+	public  AnswerResult getResult(@RequestBody UserAnswers userAnswers) {
+		
+		return service.getResult(userAnswers);
+		
+	}
+
+}

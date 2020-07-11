@@ -1,0 +1,29 @@
+package com.quiz.service.impl;
+
+import java.util.List;
+
+import com.quiz.dao.QuestionDAO;
+import com.quiz.model.AnswerResult;
+import com.quiz.model.Question;
+import com.quiz.model.UserAnswers;
+import com.quiz.service.AnswerService;
+import com.quiz.service.QuestionService;
+
+public class AnswerServiceImpl implements AnswerService {
+	
+	private QuestionService questionService;
+	
+
+	@Override
+	public AnswerResult getResult(UserAnswers userAnswers) {
+		
+		List<Question> queList= questionService.getAllQuestions();
+		
+		AnswerResult ansResult = new AnswerResult();
+		
+		
+		
+		return null;
+	}
+
+}

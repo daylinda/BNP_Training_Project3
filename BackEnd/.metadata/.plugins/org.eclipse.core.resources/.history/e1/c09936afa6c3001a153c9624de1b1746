@@ -1,0 +1,15 @@
+package com.quiz.service.impl;
+
+import com.quiz.model.AnswerResult;
+import com.quiz.model.UserAnswers;
+import com.quiz.service.AnswerService;
+
+public class AnswerServiceImpl implements AnswerService {
+
+	@Override
+	public AnswerResult getResult(UserAnswers userAnswers) {
+		
+		return null;
+	}
+
+}

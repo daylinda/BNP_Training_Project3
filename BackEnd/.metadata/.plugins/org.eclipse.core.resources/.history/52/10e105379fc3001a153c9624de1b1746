@@ -1,0 +1,29 @@
+package com.quiz.model;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Answers {
+	
+	private Map<String,String> answerMap;
+
+	public Answers() {
+		this.answerMap=new HashMap<>();
+	}
+	public Map<String, String> getAnswerMap() {
+		return answerMap;
+	}
+
+	public void setAnswerMap(Map<String, String> answerMap) {
+		this.answerMap = answerMap;
+	}
+
+	public Answers(Map<String, String> answerMap) {
+		
+		this.answerMap = answerMap;
+	}
+	
+	
+	
+
+}

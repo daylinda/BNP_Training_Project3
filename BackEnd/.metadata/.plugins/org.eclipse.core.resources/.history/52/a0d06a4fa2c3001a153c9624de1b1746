@@ -1,0 +1,8 @@
+package com.quiz.model;
+
+public class AnswerResponse {
+	private int questionId;
+	private String userAnswer;
+	private String correctAnswer;
+
+}

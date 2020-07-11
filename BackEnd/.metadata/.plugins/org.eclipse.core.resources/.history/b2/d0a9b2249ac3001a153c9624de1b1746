@@ -1,0 +1,24 @@
+package com.quiz.service.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.quiz.model.Questions;
+import com.quiz.service.QuestionService;
+@Service
+public class QuestionServiceImpl implements QuestionService {
+
+	@Override
+	public Questions createQuestions(Questions questions) {
+		
+		return null ;
+	}
+
+	@Override
+	public List<Questions> getAllQuestions() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

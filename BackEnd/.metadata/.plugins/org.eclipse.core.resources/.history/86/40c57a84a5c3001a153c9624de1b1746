@@ -1,0 +1,15 @@
+package com.quiz.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.quiz.model.Question;
+
+@RestController
+public class AnswerController {
+	
+	@PostMapping("/answers")
+	public  List<AnswerResponse>
+
+}

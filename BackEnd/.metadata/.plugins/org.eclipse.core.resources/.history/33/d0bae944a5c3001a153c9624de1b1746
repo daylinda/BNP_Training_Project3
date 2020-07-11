@@ -1,0 +1,9 @@
+package com.quiz.model;
+
+public class Result {
+	
+	private String userName;
+	private int result;
+	
+
+}

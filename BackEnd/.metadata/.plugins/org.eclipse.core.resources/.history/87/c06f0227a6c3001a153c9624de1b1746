@@ -1,0 +1,9 @@
+package com.quiz.service;
+
+import com.quiz.model.AnswerResult;
+
+public interface AnswerService {
+	
+	public AnswerResult getResult();
+
+}
