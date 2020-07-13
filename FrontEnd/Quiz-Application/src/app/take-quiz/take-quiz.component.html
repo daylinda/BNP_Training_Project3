@@ -1,0 +1,13 @@
+<div>
+    <input type="text" placeholder="Enter user Name"[(ngModel)]='userAnswer.userName'></br>
+    Q1<input type="radio" value="Ans1" [(ngModel)]='userAnswer.userAnswerMap.set(1)'/>
+    <input type="radio" value="Ans2" [(ngModel)]='userAnswer.userAnswerMap.set(1)'/>
+    <input type="radio" value="Ans3" [(ngModel)]='userAnswer.userAnswerMap.set(1)'/>
+    <input type="radio" value="Ans4" [(ngModel)]='userAnswer.userAnswerMap.set(1)'/>
+
+    <br/>
+    <br/>
+    <input type="button" (click)='takeQuiz()'>Submit</input>
+
+
+</div>

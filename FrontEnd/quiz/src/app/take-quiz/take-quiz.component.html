@@ -1,0 +1,44 @@
+
+<div>
+    <h2>Take the below quiz</h2>
+    <table border="1px">
+        <tr>
+            <td><input type="text" placeholder="Enter user Name" [(ngModel)]='userAnswer.userName'></td>
+        </tr>
+        <tr>
+            <td>Question 1:What is the square root of 4?<br>
+                <input type="radio" name="Answer1" value="2" [(ngModel)]='userAnswer.userAnswerMap.set(1)'/>
+                <input type="radio" name="Answer1" value="0" [(ngModel)]='userAnswer.userAnswerMap.set(1)'/>
+                <input type="radio" name="Answer1" value="3" [(ngModel)]='userAnswer.userAnswerMap.set(1)'/>
+            </td>
+        </tr>
+        <tr>
+            <td>Question 2:What is the capital of India?<br>
+                <input type="radio" name="Answer2" value="Chennai" [(ngModel)]='userAnswer.userAnswerMap.set(2)'/>
+                <input type="radio" name="Answer2" value="Mumbai" [(ngModel)]='userAnswer.userAnswerMap.set(2)'/>
+                <input type="radio" name="Answer2" value="New Delhi" [(ngModel)]='userAnswer.userAnswerMap.set(2)'/>
+            </td>
+        </tr>
+        <tr>
+            <td>Question 3:What is the capita of USA?<br>
+                <input type="radio" name="Answer3" value="LA" [(ngModel)]='userAnswer.userAnswerMap.set(3)'/>
+                <input type="radio" name="Answer3" value="Washington DC" [(ngModel)]='userAnswer.userAnswerMap.set(3)'/>
+                <input type="radio" name="Answer3" value="Broklyn" [(ngModel)]='userAnswer.userAnswerMap.set(3)'/>
+            </td>
+        </tr>
+        <tr>
+            <td>Question 14:Who won FIFA 2018 World Cup?<br>
+                <input type="radio" name="Answer1" value="Russia" [(ngModel)]='userAnswer.userAnswerMap.set(4)'/>
+                <input type="radio" name="Answer1" value="France" [(ngModel)]='userAnswer.userAnswerMap.set(4)'/>
+                <input type="radio" name="Answer1" value="Chilli" [(ngModel)]='userAnswer.userAnswerMap.set(4)'/>
+            </td>
+        </tr>
+        <tr>
+            <td><button (click)="takeQuiz()">Submit</button></td>
+        </tr>
+    </table>
+
+    
+    
+    
+</div>
