@@ -46,3 +46,6 @@ button:hover{
 
 
 
+input.ng-invalid {
+    background-color:pink;
+}
