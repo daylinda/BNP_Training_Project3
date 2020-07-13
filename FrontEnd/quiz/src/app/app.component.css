@@ -1,10 +1,44 @@
+.title{
+    float: none;
+    background-color: rgba(66, 109, 190, 0.863);
+    color: black;   
+    font-size: large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.img{
+    width: 100%;
+
+
+}
+
+
 h2{
     text-decoration:underline;
 }
 ul{
+    font-size: large;
+    background-color:  rgba(66, 109, 190, 0.863);
     list-style: none;
+    padding: 10px;
 }
 li{
+    
     display: inline;
     padding: 30px;
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 2vw;
+    color: black;
+    text-shadow: blanchedalmond;
+    
+    
+}
+a:hover{
+    color: ivory;
+    font-size: xx-large;
+    
 }

@@ -1,44 +1,84 @@
+<br/>
 
-<div>
+<div class="title">
     <h2>Take the below quiz</h2>
-    <table border="1px">
+</div>
+<div>
+    <form action="/action_page.php" name="myForm">
+    <table >
+      
         <tr>
-            <td><input type="text" placeholder="Enter user Name" [(ngModel)]='userAnswer.userName'></td>
+            <td>Enter Name:  <input type="text" placeholder="Enter user Name" name="userName" [(ngModel)]='userAnswerHtmlModel.userName'  ng-model="userName" required></td>
+            
+                        
+            
         </tr>
+        
         <tr>
-            <td>Question 1:What is the square root of 4?<br>
-                <input type="radio" name="Answer1" value="2" [(ngModel)]='userAnswer.userAnswerMap.set(1)'/>
-                <input type="radio" name="Answer1" value="0" [(ngModel)]='userAnswer.userAnswerMap.set(1)'/>
-                <input type="radio" name="Answer1" value="3" [(ngModel)]='userAnswer.userAnswerMap.set(1)'/>
+            <td>Question 1: What is the square root of 4?<br>
+                <input type="radio" name="Answer1" value="2" [(ngModel)]='userAnswerHtmlModel.answer1'/> <label> 2 </label> <br>
+                <input type="radio" name="Answer1" value="0" [(ngModel)]='userAnswerHtmlModel.answer1'/> <label> 0 </label><br>
+                <input type="radio" name="Answer1" value="3" [(ngModel)]='userAnswerHtmlModel.answer1'/> <label> 3 </label><br>
             </td>
         </tr>
         <tr>
-            <td>Question 2:What is the capital of India?<br>
-                <input type="radio" name="Answer2" value="Chennai" [(ngModel)]='userAnswer.userAnswerMap.set(2)'/>
-                <input type="radio" name="Answer2" value="Mumbai" [(ngModel)]='userAnswer.userAnswerMap.set(2)'/>
-                <input type="radio" name="Answer2" value="New Delhi" [(ngModel)]='userAnswer.userAnswerMap.set(2)'/>
+            <td>Question 2: What is the capital of India?<br>
+                <input type="radio" name="Answer2" value="Chennai"   [(ngModel)]='userAnswerHtmlModel.answer2'/> <label> Chennai </label><br>
+                <input type="radio" name="Answer2" value="Mumbai"    [(ngModel)]='userAnswerHtmlModel.answer2'/> <label> Mumbai </label><br>
+                <input type="radio" name="Answer2" value="New Delhi" [(ngModel)]='userAnswerHtmlModel.answer2'/> <label> New Delhi </label><br>
             </td>
         </tr>
         <tr>
-            <td>Question 3:What is the capita of USA?<br>
-                <input type="radio" name="Answer3" value="LA" [(ngModel)]='userAnswer.userAnswerMap.set(3)'/>
-                <input type="radio" name="Answer3" value="Washington DC" [(ngModel)]='userAnswer.userAnswerMap.set(3)'/>
-                <input type="radio" name="Answer3" value="Broklyn" [(ngModel)]='userAnswer.userAnswerMap.set(3)'/>
+            <td>Question 3: What is the capital of USA?<br>
+                <input type="radio" name="Answer3" value="LA"            [(ngModel)]='userAnswerHtmlModel.answer3'/> <label> LA </label><br>
+                <input type="radio" name="Answer3" value="Washington DC" [(ngModel)]='userAnswerHtmlModel.answer3'/> <label> Washington DC </label><br>
+                <input type="radio" name="Answer3" value="Broklyn" [(ngModel)]='userAnswerHtmlModel.answer3'/> <label> Broklyn </label><br>
             </td>
         </tr>
         <tr>
-            <td>Question 14:Who won FIFA 2018 World Cup?<br>
-                <input type="radio" name="Answer1" value="Russia" [(ngModel)]='userAnswer.userAnswerMap.set(4)'/>
-                <input type="radio" name="Answer1" value="France" [(ngModel)]='userAnswer.userAnswerMap.set(4)'/>
-                <input type="radio" name="Answer1" value="Chilli" [(ngModel)]='userAnswer.userAnswerMap.set(4)'/>
+            <td>Question 4: Who won FIFA 2018 World Cup?<br>
+                <input type="radio" name="Answer4" value="Russia" [(ngModel)]='userAnswerHtmlModel.answer4'/> <label> Russia </label><br>
+                <input type="radio" name="Answer4" value="France" [(ngModel)]='userAnswerHtmlModel.answer4'/> <label> France </label><br>
+                <input type="radio" name="Answer4" value="Chilli" [(ngModel)]='userAnswerHtmlModel.answer4'/> <label> Chilli </label><br>
             </td>
         </tr>
-        <tr>
-            <td><button (click)="takeQuiz()">Submit</button></td>
+        <tr> 
+            <td align="center"><input  type="submit" value="Submit" (click)="takeQuiz()"></td>
         </tr>
     </table>
+    </form>
 
-    
+</div>
+<br>
+<br>
+<br>
+<button align="center" (click)="showReview()">Click to check Review</button>
+<br>
+<br>
+<br>
+<br>
+<div class="title" class="vib"  align="center" id="Review" >
+    <h2>Review of Quiz</h2>
+</div>
+
+<div  align="center" class="vib" id="Result">
+    <h3>Result: {{answerResult.result}}</h3>
+    <h3>Answers of {{answerResult.userName}}</h3>
+
+    <table>
+        <tr>
+            <th>Question No.</th>
+            <th>Your Answer</th>
+            <th>Correct Answer</th>
+        </tr>
+
+        <tr *ngFor="let answerResponse of answerResult.answerResponses">
+            <td> {{answerResponse.questionId}}</td>
+            <td> {{answerResponse.userAnswer}}</td>
+            <td> {{answerResponse.correctAnswer}}</td>
+        </tr>
+    </table>
     
     
 </div>
+

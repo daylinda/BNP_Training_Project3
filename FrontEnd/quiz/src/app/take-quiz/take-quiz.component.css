@@ -1,0 +1,48 @@
+.title{
+    font-size: 3vw;
+}
+
+.title:hover{
+    font-size: larger;
+    color: lightslategray;
+}
+
+table{
+
+    border: solid  rgba(66, 109, 190, 0.863);;
+    
+}
+
+tr,td{
+    padding: 5px;
+    
+}
+
+th{
+    padding: 5px;
+    border-left: solid  rgba(66, 109, 190, 0.863);
+    text-align: center;
+    border-bottom: solid  rgba(66, 109, 190, 0.863); ;
+}
+td{
+
+   font-size: medium;
+   font-style: initial; 
+   font-stretch: wider;
+    border-bottom: dotted  rgba(66, 109, 190, 0.863);
+}
+
+button:hover{
+    background-color: lightslategray;
+}
+
+.vib{
+
+    display: none;
+    
+
+
+}
+
+
+

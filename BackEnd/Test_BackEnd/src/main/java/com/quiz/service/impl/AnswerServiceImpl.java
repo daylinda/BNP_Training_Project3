@@ -28,14 +28,16 @@ public class AnswerServiceImpl implements AnswerService {
 	private QuizResultService resultService;
 
 	@Override
-	public AnswerResult getResult(UserAnswers userAnswers) {
+	public List<AnswerResponse> getResult(UserAnswers userAnswers) {
 		
 		List<Question> queList= questionService.getAllQuestions();
 		
 		AnswerResult ansResult = new AnswerResult();
 		
 		ansResult.setUserName(userAnswers.getUserName());
+		
 		int result = 0;
+		
 		
 		List<AnswerResponse> ansResponseList= new ArrayList<>();
 		for ( Question q: queList) {
@@ -57,7 +59,7 @@ public class AnswerServiceImpl implements AnswerService {
 		resultService.createQuizResult(new QuizResult(userAnswers.getUserName(),result));
 		
 		
-		return ansResult;
+		return ansResult.getAnswerResponse();
 	}
 	
 	

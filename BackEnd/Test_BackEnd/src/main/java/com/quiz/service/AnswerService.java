@@ -1,10 +1,12 @@
 package com.quiz.service;
 
-import com.quiz.model.AnswerResult;
+import java.util.List;
+
+import com.quiz.model.AnswerResponse;
 import com.quiz.model.UserAnswers;
 
 public interface AnswerService {
 	
-	public AnswerResult getResult(UserAnswers userAnswers);
+	public List<AnswerResponse> getResult(UserAnswers userAnswers);
 
 }

@@ -1,0 +1,45 @@
+.title{
+    font-size: 3vw;
+}
+
+.title:hover{
+    font-size: larger;
+    color: lightslategray;
+}
+
+table,td,th{
+
+    border: solid  rgba(66, 109, 190, 0.863);;
+    padding: 5px;
+}
+
+
+th{
+    font-size: x-large;
+    padding: 5px;
+    border-bottom:solid  rgba(66, 109, 190, 0.863);
+    text-align: center;
+    
+}
+td{
+    text-align: center;
+   font-size: medium;
+   font-style: initial; 
+   font-stretch: wider;
+    
+}
+
+button:hover{
+    background-color: lightslategray;
+}
+
+.vib{
+
+    display: none;
+    
+
+
+}
+
+
+

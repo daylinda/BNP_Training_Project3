@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-review-quiz',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewQuizComponent implements OnInit {
 
-  constructor() { }
+  
+
+  constructor() 
+  {
+  
+   }
 
   ngOnInit() {
+
+   
+    
   }
 
 }
