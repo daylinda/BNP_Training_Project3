@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { UserAnswerHTMLModel } from '../user-answer-htmlmodel';
 import { AnswerResult } from '../answer-result';
 import { AnswerResponse } from '../answer-response';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-take-quiz',
@@ -15,8 +16,10 @@ export class TakeQuizComponent implements OnInit {
   private userAnswerHtmlModel:UserAnswerHTMLModel;
   private answerResult: AnswerResult;
   
+  
 
   constructor(private service:AnswerService, private router:Router) { 
+    
     this.userAnswerHtmlModel=new UserAnswerHTMLModel();
     this.answerResult = new AnswerResult();
     this.answerResult.result = 0;
@@ -53,14 +56,15 @@ export class TakeQuizComponent implements OnInit {
     p.style.display="block";   
   }  
 
-  public validateForm() {
-    var x = document.forms["myForm"]["userName"].value;
-    if (x == "") {
-      alert("Name must be filled out");
+   validateForm() {
+    var name = document.forms["myForm"]["userName"].value;
+    if (name == "") {
+      window.alert("Name must be filled out");
       return false;
     }
   }
 
+  
 
 
   ngOnInit() {

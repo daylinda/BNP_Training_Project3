@@ -4,13 +4,12 @@
     <h2>Take the below quiz</h2>
 </div>
 <div>
-    <form action="/action_page.php" name="myForm">
+<form action="/submit.php" name="myForm" method="post">
+    
     <table >
       
         <tr>
-            <td>Enter Name:  <input type="text" placeholder="Enter user Name" name="userName" [(ngModel)]='userAnswerHtmlModel.userName'  ng-model="userName" required></td>
-            
-                        
+            <td>Enter Name:  <input type="text" placeholder="Enter user Name" name="userName" [(ngModel)]='userAnswerHtmlModel.userName'  ng-model="userName" required ></td>                       
             
         </tr>
         

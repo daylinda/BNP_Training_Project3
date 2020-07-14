@@ -8,6 +8,13 @@
   
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    function validateForm() {
+    var name = document.forms["myForm"]["userName"].value;
+    if (name == "") {
+      window.alert("Name must be filled out");
+      return false;
+    }
+  }
 </script>
 
 </head>

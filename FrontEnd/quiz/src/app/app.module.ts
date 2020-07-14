@@ -7,7 +7,7 @@ import { AnswerService } from './answer.service';
 import { TakeQuizComponent } from './take-quiz/take-quiz.component';
 import { ReviewQuizComponent } from './review-quiz/review-quiz.component';
 import { QuizResultComponent } from './quiz-result/quiz-result.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
@@ -20,7 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
+
   ],
   providers: [AnswerService],
   bootstrap: [AppComponent]
